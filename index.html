@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Créative — Accueil</title>
+    <link rel="stylesheet" href="indexstyles.css">
+</head>
+<body>
+
+    <!-- HEADER : Nom + Logo + Slogan -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="./images.jpeg" alt="Logo Agence" class="logo">
+                <div>
+                    <h1>Agence Créative</h1>
+                    <p class="slogan">Design — Développement — Communication</p>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="apropos.html">À propos</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h2>Nous donnons vie à vos idées digitales</h2>
+                <p>Création de sites web, community management et design graphique pour accompagner votre croissance.</p>
+                <p><a class="btn" href="services.html">Découvrir nos services</a></p>
+            </div>
+
+            <div class="hero-image">
+                <img src="./Sans titre.jpeg" alt="Bannière agence">
+            </div>
+        </div>
+    </section>
+
+    <!-- PRÉSENTATION GÉNÉRALE -->
+    <section class="intro container">
+        <h3>Qui sommes-nous ?</h3>
+        <p>
+            Agence Créative est une équipe passionnée de designers, développeurs et experts en communication 
+            dédiée aux entreprises modernes. Nous combinons esthétique, innovation et performance pour 
+            donner vie à des expériences digitales qui marquent les esprits.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-preview container">
+        <h3>Nos services phares</h3>
+        <div class="cards">
+
+            <article class="card">
+                <h4>Site web & e-commerce</h4>
+                <p>Sites responsives, optimisés SEO et faciles à administrer.</p>
+            </article>
+
+            <article class="card">
+                <h4>Community management</h4>
+                <p>Stratégie de contenu, création visuelle et gestion des réseaux sociaux.</p>
+            </article>
+
+            <article class="card">
+                <h4>Design graphique</h4>
+                <p>Identité visuelle, logos, supports imprimés et numériques.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Agence Créative — Tous droits réservés</p>
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

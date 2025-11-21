@@ -1,0 +1,178 @@
+/* HEADER */
+.site-header {
+    background: linear-gradient(135deg, #0b76ef, #162447); /* dégradé bleu */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* SLOGAN */
+.site-header .slogan {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* NAVIGATION */
+.main-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav a.active {
+    background: #fff;
+    color: #0b76ef;
+}
+
+/* TITRE PRINCIPAL */
+main.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* TITRES DE SECTIONS */
+main.container h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #162447;
+}
+
+/* GRID PROJETS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    background: #f0f4f8;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+}
+
+.project-card h4 {
+    margin-bottom: 0.5rem;
+    color: #0f3460;
+}
+
+/* GRID TEMOIGNAGES */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.6rem;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial h4 {
+    color: #0f3460;
+}
+
+/* TABLEAU CLIENTS */
+.clients table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+
+.clients th, .clients td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.clients th {
+    background: #0b76ef;
+    color: #fff;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .projects-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 1rem;
+    }
+    .main-nav {
+        gap: 1rem;
+    }
+    .site-header .slogan {
+        font-size: 1rem;
+    }
+}

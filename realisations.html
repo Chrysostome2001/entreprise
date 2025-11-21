@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Créative — Réalisations</title>
+    <link rel="stylesheet" href="./realisationsstyles.css">
+</head>
+<body>
+    <header class="site-header">
+        <p class="slogan">Design — Développement — Communication</p>
+        <nav class="main-nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="apropos.html">À propos</a>
+            <a href="realisations.html" class="active">Réalisations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Nos Réalisations</h2>
+
+        <!-- SECTION PROJETS -->
+        <section class="projects">
+            <h3>Projets Réalisés</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/images/projet1.jpg" alt="Projet 1">
+                    <h4>Projet Web E-commerce</h4>
+                    <p>Développement d'une plateforme de vente en ligne complète avec paiement sécurisé et gestion des stocks.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/projet2.jpg" alt="Projet 2">
+                    <h4>Application Mobile</h4>
+                    <p>Création d'une application mobile pour la réservation de services locaux avec notifications en temps réel.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/projet3.jpg" alt="Projet 3">
+                    <h4>Campagne Marketing Digitale</h4>
+                    <p>Stratégie complète sur les réseaux sociaux et référencement pour booster la visibilité d'une marque.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION TEMOIGNAGES -->
+        <section class="testimonials">
+            <h3>Témoignages Clients</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="assets/images/client1.jpg" alt="Client 1">
+                    <p>"L'équipe a transformé notre vision en réalité. Très satisfait du résultat !"</p>
+                    <h4>Marie Dupont</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/images/client2.jpg" alt="Client 2">
+                    <p>"Professionnels et à l'écoute, ils ont livré notre application dans les délais."</p>
+                    <h4>Jean Martin</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/images/client3.jpg" alt="Client 3">
+                    <p>"Une agence créative qui apporte de la valeur à chaque projet."</p>
+                    <h4>Lucie Bernard</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CLIENTS / PARTENAIRES -->
+        <section class="clients">
+            <h3>Clients et Partenaires</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom du client</th>
+                        <th>Projet</th>
+                        <th>Année</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entreprise Alpha</td>
+                        <td>Site Web</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Société Beta</td>
+                        <td>Application Mobile</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Startup Gamma</td>
+                        <td>Branding</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Entreprise Delta</td>
+                        <td>Marketing Digital</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Partenaire Epsilon</td>
+                        <td>Consulting</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Agence Créative — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
